@@ -8,7 +8,14 @@
  * https://sailsjs.com/anatomy/config/routes-js
  */
 
+/*global sails:true*/
+var sails = require('sails');
+// var moment = require('moment');
+var routesConfig = require(`${sails.config.appPath}/api/routes/index`);
+
 module.exports.routes = {
+
+  ...routesConfig,
 
   /***************************************************************************
   *                                                                          *
