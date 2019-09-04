@@ -14,7 +14,8 @@
  */
 
 module.exports.models = {
-
+  fetchRecordsOnUpdate: true,
+  fetchRecordsOnCreate: true,
 
   /***************************************************************************
   *                                                                          *
@@ -54,6 +55,7 @@ module.exports.models = {
   ***************************************************************************/
 
   // migrate: 'alter',
+  migrate: 'safe',
 
 
   /***************************************************************************
@@ -69,8 +71,8 @@ module.exports.models = {
   ***************************************************************************/
 
   attributes: {
-    createdAt: { type: 'number', autoCreatedAt: true, },
-    updatedAt: { type: 'number', autoUpdatedAt: true, },
+    createdAt: { type: 'ref', columnType: 'timestamp with time zone', autoCreatedAt: true },
+    updatedAt: { type: 'ref', columnType: 'timestamp with time zone', autoUpdatedAt: true },
     id: { type: 'number', autoIncrement: true, },
     //--------------------------------------------------------------------------
     //  /\   Using MongoDB?

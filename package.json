@@ -1,18 +1,32 @@
 {
-  "name": "zeusx-nodejs",
+  "name": "sails-training",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
+    "async": "2.1.4",
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.2",
+    "chalk": "^2.4.1",
+    "cron": "^1.3.0",
+    "express-jwt": "^5.3.1",
+    "flatry": "^1.0.12",
+    "jsonwebtoken": "^8.3.0",
+    "pluralize": "^7.0.0",
     "sails": "^1.1.0",
+    "sails-ember-rest": "^1.0.15",
+    "sails-hook-apianalytics": "https://github.com/Paskalouis/sails-hook-apianalytics/tarball/master",
     "grunt": "1.0.1",
     "sails-hook-grunt": "^3.1.0",
     "sails-hook-orm": "^2.1.1",
     "sails-hook-sockets": "^1.5.5",
     "@sailshq/connect-redis": "^3.2.1",
     "@sailshq/socket.io-redis": "^5.2.0",
-    "@sailshq/lodash": "^3.10.3"
+    "@sailshq/lodash": "^3.10.3",
+    "sails-postgresql": "^1.0.1",
+    "uuid": "^3.3.2",
+    "winston": "^2.4.2"
   },
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3"
@@ -26,7 +40,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dre/zeusx-nodejs.git"
+    "url": "git@github.com:andreyw3o/sails-training.git"
   },
   "author": "dre",
   "license": "",
