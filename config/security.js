@@ -32,7 +32,7 @@ module.exports.security = {
     allRoutes: true,
     allowOrigins: ['http://192.168.1.120:4200'],
     allowCredentials: true,
-    allowRequestMethods: 'GET, POST, PUT, DELETE, OPTIONS, HEAD',
+    allowRequestMethods: 'GET, POST, PUT, DELETE, OPTIONS, HEAD, PATCH',
     allowRequestHeaders: 'content-type, authorization'
   },
 
